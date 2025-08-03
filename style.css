@@ -1,0 +1,102 @@
+:root {
+    --profit: #16c784;
+    --loss: #ea3943;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: #2d3436;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.positive {
+    color: var(--profit);
+}
+
+.negative {
+    color: var(--loss);
+}
+
+.trade-list {
+    margin-top: 1rem;
+}
+
+.trade-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.trade-direction {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.long {
+    background: var(--profit);
+    color: white;
+}
+
+.short {
+    background: var(--loss);
+    color: white;
+}
+
+.chart-container {
+    height: 400px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .metric-value {
+        font-size: 1.5rem;
+    }
+}

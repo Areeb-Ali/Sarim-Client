@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarim Crypto Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sarim Trading Dashboard</h1>
+            <h2>Starting: <span id="startingCapitalDisplay"></span></h2> <p>(Initial Capital)</p>
+            <p>Last Updated: <span id="updateTime"></span></p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Total Value</h3>
+                <div class="metric-value" id="totalValue">$0</div>
+                <div>24h P&L: <span id="dailyPnl">--</span></div>
+            </div>
+
+            <div class="card">
+                <h3>Active Trades</h3>
+                <div class="trade-list" id="activeTrades"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Spot Investments</h3>
+            <div class="trade-list" id="spotInvestments"></div>
+        </div>
+        <!-- <div class="grid">
+            <div class="card">
+                <h3>Weekly Performance</h3>
+                <div class="metric-value negative">-03%</div>
+                <div>P&L: $00</div>
+            </div>
+
+            <div class="card">
+                <h3>Monthly Performance</h3>
+                <div class="metric-value negative">-03%</div>
+                <div>P&L: $00,000</div>
+            </div>
+        </div> -->
+
+        <div class="card">
+            <h3>Capital Growth Over Time</h3>
+            <div id="chart" class="chart-container"></div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
