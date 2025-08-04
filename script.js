@@ -4,13 +4,13 @@ const data = {
     lastUpdated: new Date().toLocaleString(),
     startingCapital: 5.3,
     activeTrades: [
-        // {
-        //     pair: "BTC/USDT",
-        //     direction: "long",
-        //     entryPrice: 42000,   // Your entry price
-        //     quantity: 1.2,      // Quantity of coins
-        //     currentPrice: 43250 // Current market price
-        // },
+        {
+            pair: "BTC/USDT",
+            direction: "long",
+            entryPrice: 114415.4,   // Your entry price
+            quantity: 0.000001999,      // Quantity of coins
+            currentPrice: 114291.9 // Current market price
+        },
         // {
         //     pair: "ETH/USDT",
         //     direction: "short",
@@ -20,7 +20,7 @@ const data = {
         // }
     ],
     spotInvestments: [
-        { asset: "USDT", quantity: 5.3, entryPrice: 1, currentPrice: 1 },
+        { asset: "USDT", quantity: 5.0, entryPrice: 1, currentPrice: 1 },
         // { asset: "TIA", quantity: 0.61, entryPrice: 3.2, currentPrice: 3.595 },
         // { asset: "AVAX", quantity: 0.05, entryPrice: 26.977, currentPrice: 25.344},
         // { asset: "BKN", quantity: 11.66, entryPrice: 0.25707, currentPrice: 0.23342 },
@@ -133,8 +133,8 @@ renderSpotInvestments();
 
 // ========== DATA INPUT - EDIT THESE VALUES ========== //
 const capitalData = [
-    // { date: "2025-02-05", capital: 29.3 },
-    // { date: "2025-02-06", capital: 28.8 },
+    { date: "2025-08-03", capital: 5.3 },
+    { date: "2025-08-04", capital: 5.22 },
     // { date: "2025-02-07", capital: 28.9 },
     // { date: "2025-02-08", capital: 28.7 },
     // { date: "2025-02-09", capital: 28.7 },
