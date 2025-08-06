@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-            <h1>Sarim Trading Dashboard</h1>
-            <h2>Starting: <span id="startingCapitalDisplay"></span></h2> <p>(Initial Capital)</p>
-            <p>Last Updated: <span id="updateTime"></span></p>
+            <div class="header-left">
+                <h1>Sarim Trading Dashboard</h1>
+                <h2>Starting: <span id="startingCapitalDisplay"></span></h2>
+                <p>(Initial Capital)</p>
+                <p>Last Updated: <span id="updateTime"></span></p>
+            </div>
+            <div class="header-right">
+                <!-- <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i> Dark Mode
+                </button> -->
+            </div>
         </div>
+
+
         <div class="grid">
             <div class="card">
                 <h3>Total Value</h3>
@@ -50,9 +62,18 @@
             <div id="chart" class="chart-container"></div>
         </div>
 
+        <div class="card">
+            <h3>Trade History (With Twitter Proof)</h3>
+            <div class="trade-history" id="tradeHistory">
+                <!-- Sample entry -->
+                <!-- Entries will be injected via JS -->
+            </div>
+        </div>
+
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="/script.js"></script>
 </body>
+
 </html>
