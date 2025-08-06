@@ -3,25 +3,25 @@ const data = {
     lastUpdated: new Date().toLocaleString(),
     startingCapital: 5.3,
     activeTrades: [
-        {
-            pair: "BTC/USDT",
-            direction: "long",
-            entryPrice: 114415.4,
-            leverage: 100,
-            marginUsed: 0.23,
-            currentPrice: 114364
-        },
-        {
-            pair: "BTC/USDT",
-            direction: "long",
-            entryPrice: 113060.6,
-            leverage: 100,
-            marginUsed: 0.23,
-            currentPrice: 114364
-        }
+        // {
+        //     pair: "BTC/USDT",
+        //     direction: "long",
+        //     entryPrice: 114415.4,
+        //     leverage: 100,
+        //     marginUsed: 0.23,
+        //     currentPrice: 114866.9
+        // },
+        // {
+        //     pair: "BTC/USDT",
+        //     direction: "long",
+        //     entryPrice: 113060.6,
+        //     leverage: 100,
+        //     marginUsed: 0.215,
+        //     currentPrice: 114866.9
+        // }
     ],
     spotInvestments: [
-        { asset: "USDT", quantity: 4.82, entryPrice: 1, currentPrice: 1 }
+        { asset: "USDT", quantity: 5.69, entryPrice: 1, currentPrice: 1 }
     ]
 };
 // ========== END OF DATA INPUT ========== //
@@ -140,10 +140,10 @@ renderSpotInvestments();
 
 // ========== CAPITAL CHART ========== //
 const capitalData = [
-    { date: "2025-08-03", capital: 4.2 },
-    { date: "2025-08-04", capital: 4.1 },
-    { date: "2025-08-05", capital: 3.6 },
-    { date: "2025-08-06", capital: 4.7 }
+    { date: "2025-08-03", capital: 5.3 },
+    { date: "2025-08-04", capital: 5 },
+    { date: "2025-08-05", capital: 4.8 },
+    { date: "2025-08-06", capital: 5.69 }
 ];
 
 const renderChart = () => {
@@ -232,10 +232,19 @@ const tradeHistory = [
         date: "2025-08-04",
         pair: "BTC/USDT",
         direction: "long",
-        entryPrice: 114483,
-        exitPrice: 115636,
-        result: "+101%",
+        entryPrice: 114415,
+        exitPrice: 114866,
+        result: "+39.46%",
         twitterLink: "https://x.com/areebithink/status/1952310045871648955"
+    },
+    {
+        date: "2025-08-05",
+        pair: "BTC/USDT",
+        direction: "long",
+        entryPrice: 113060,
+        exitPrice: 114866,
+        result: "+159.76%",
+        twitterLink: "https://x.com/areebithink/status/1952753924705784053"
     }
 ];
 
