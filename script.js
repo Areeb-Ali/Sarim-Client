@@ -3,14 +3,14 @@ const data = {
     lastUpdated: new Date().toLocaleString(),
     startingCapital: 5.3,
     activeTrades: [
-        {
-            pair: "BTC/USDT",
-            direction: "long",
-            entryPrice: 119492.9,
-            leverage: 100,
-            marginUsed: 0.9,
-            currentPrice: 119619
-        },
+        // {
+        //     pair: "BTC/USDT",
+        //     direction: "long",
+        //     entryPrice: 119492.9,
+        //     leverage: 100,
+        //     marginUsed: 0.85,
+        //     currentPrice: 120692
+        // },
         // {
         //     pair: "BTC/USDT",
         //     direction: "long",
@@ -21,7 +21,7 @@ const data = {
         // }
     ],
     spotInvestments: [
-        { asset: "USDT", quantity: 5.32, entryPrice: 1, currentPrice: 1 }
+        { asset: "USDT", quantity: 7.0, entryPrice: 1, currentPrice: 1 }
     ]
 };
 // ========== END OF DATA INPUT ========== //
@@ -150,6 +150,7 @@ const capitalData = [
     { date: "2025-08-10", capital: 6.22 },
     { date: "2025-08-11", capital: 4.66 },
     { date: "2025-08-12", capital: 6.31 },
+    { date: "2025-08-13", capital: 7.0 },
 
 
 
@@ -272,6 +273,15 @@ const tradeHistory = [
         exitPrice: 117754,
         result: "+99.71%",
         twitterLink: "https://x.com/areebithink/status/1953763180863242590"
+    },
+    {
+        date: "2025-08-13",
+        pair: "BTC/USDT",
+        direction: "long",
+        entryPrice: 119492,
+        exitPrice: 120692,
+        result: "+100%",
+        twitterLink: "https://x.com/areebithink/status/1954869913748668595"
     },
 ];
 
