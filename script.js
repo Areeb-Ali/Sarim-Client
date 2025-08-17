@@ -3,13 +3,13 @@ const data = {
     lastUpdated: new Date().toLocaleString(),
     startingCapital: 5.3,
     activeTrades: [
-         {
+        {
             pair: "BTC/USDT",
             direction: "long",
             entryPrice: 118244,
             leverage: 100,
             marginUsed: 0.74,
-            currentPrice: 117670
+            currentPrice: 118118
         },
         // {
         //     pair: "BTC/USDT",
@@ -154,6 +154,8 @@ const capitalData = [
     { date: "2025-08-14", capital: 7.0 },
     { date: "2025-08-15", capital: 6.7 },
     { date: "2025-08-16", capital: 6.6 },
+    { date: "2025-08-16", capital: 6.9 },
+
 
 ];
 
